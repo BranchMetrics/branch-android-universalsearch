@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    style="?attr/branchAutocompleteContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        style="?attr/branchAutocompleteIcon"
+        android:id="@+id/branch_autocomplete_image"
+        android:layout_marginStart="@dimen/branch_autocomplete_inner_spacing_start"
+        android:layout_marginEnd="@dimen/branch_autocomplete_inner_spacing_middle"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/branch_autocomplete_text" />
+
+    <TextView
+        style="?attr/branchAutocompleteText"
+        android:id="@+id/branch_autocomplete_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/branch_autocomplete_inner_spacing_end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/branch_autocomplete_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="bluetooth searched asdasdas adasdasdsadasd asdadasdasdasdasdasd"/>
+
+</android.support.constraint.ConstraintLayout>

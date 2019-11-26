@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Do NOT remove white spaces. They help solving merge conflicts. -->
+
+    <!-- TEXT APPEARANCES -->
+
+    <!-- List title (regular) -->
+    <attr name="branchListTitle" format="reference"/>
+    <!-- List title (regular, smaller) -->
+    <attr name="branchListTitleSmall" format="reference"/>
+    <!-- List title (medium) -->
+    <attr name="branchListMediumTitle" format="reference"/>
+    <!-- List subtitle (regular)-->
+    <attr name="branchListSubtitle" format="reference"/>
+    <!-- List subtitle (regular, smaller) -->
+    <attr name="branchListSubtitleSmall" format="reference"/>
+    <!-- List subtitle (medium) -->
+    <attr name="branchListMediumSubtitle" format="reference"/>
+    <!-- Very small detail text (regular) -->
+    <attr name="branchListOverline" format="reference"/>
+
+    <!-- VIEW STYLES -->
+
+    <!-- Headers for each section -->
+    <!-- R.layout.branch_section_header : the header title -->
+    <attr name="branchSectionHeaderTitle" format="reference"/>
+    <!-- R.layout.branch_section_header : the header line -->
+    <attr name="branchSectionHeaderLine" format="reference"/>
+    <!-- R.layout.branch_section_header : the header toggle -->
+    <attr name="branchSectionHeaderToggle" format="reference"/>
+    <!-- R.layout.branch_section_header : the header toggle icon -->
+    <attr name="branchSectionHeaderToggleIcon" format="reference"/>
+
+    <!-- Recycler for the 'all apps' provider -->
+    <!-- R.layout.branch_provider_all_apps : the 'all apps' recycler -->
+    <attr name="branchAllAppsRecycler" format="reference"/>
+
+    <!-- ShortcutProvider: shortcut attributes -->
+    <!-- R.layout.branch_shortcut : the shortcut title -->
+    <attr name="branchShortcutTitle" format="reference"/>
+    <!-- R.layout.branch_shortcut : the shortcut subtitle -->
+    <attr name="branchShortcutSubtitle" format="reference"/>
+    <!-- R.layout.branch_shortcut : the shortcut icon -->
+    <attr name="branchShortcutIcon" format="reference"/>
+
+    <!-- MediaProvider: media attributes -->
+    <!-- R.layout.branch_media : the media icon -->
+    <attr name="branchMediaIcon" format="reference"/>
+    <!-- R.layout.branch_media : the media label -->
+    <attr name="branchMediaLabel" format="reference"/>
+
+    <!-- AutocompleteProvider: search engines attributes -->
+    <!-- R.layout.branch_search_engine : the google container -->
+    <attr name="branchSearchEngineContainer" format="reference"/>
+    <!-- R.layout.branch_search_engine : the google icon -->
+    <attr name="branchSearchEngineIcon" format="reference"/>
+    <!-- R.layout.branch_search_engine : the google label -->
+    <attr name="branchSearchEngineLabel" format="reference"/>
+
+    <!-- InAppSearchProvider: filter items -->
+    <!-- R.layout.branch_inapp_filter : the filter container -->
+    <attr name="branchInAppFilterContainer" format="reference"/>
+    <!-- R.layout.branch_inapp_filter : the filter icon -->
+    <attr name="branchInAppFilterIcon" format="reference"/>
+    <!-- R.layout.branch_inapp_filter : the filter label -->
+    <attr name="branchInAppFilterLabel" format="reference"/>
+
+    <!-- ContactsProvider: contact attributes -->
+    <!-- R.layout.branch_contact : the contact container -->
+    <attr name="branchContactContainer" format="reference"/>
+    <!-- R.layout.branch_contact : the contact image -->
+    <attr name="branchContactImage" format="reference"/>
+    <!-- R.layout.branch_contact : the contact letter -->
+    <attr name="branchContactLetter" format="reference"/>
+    <!-- R.layout.branch_contact : the contact name -->
+    <attr name="branchContactName" format="reference"/>
+    <!-- R.layout.branch_contact : the contact number -->
+    <attr name="branchContactNumber" format="reference"/>
+    <!-- R.layout.branch_contact : the contact call button -->
+    <attr name="branchContactButtonCall" format="reference"/>
+    <!-- R.layout.branch_contact : the contact message button -->
+    <attr name="branchContactButtonMessage" format="reference"/>
+
+    <!-- InAppSearchProvider: link results -->
+    <!-- R.layout.branch_inapp_link : the container -->
+    <attr name="branchInAppLinkContainer" format="reference"/>
+    <!-- R.layout.branch_inapp_link : the item image -->
+    <attr name="branchInAppLinkImage" format="reference"/>
+    <!-- R.layout.branch_inapp_link : the item title -->
+    <attr name="branchInAppLinkTitle" format="reference"/>
+    <!-- R.layout.branch_inapp_link : the item description -->
+    <attr name="branchInAppLinkDescription" format="reference"/>
+
+    <!-- InAppSearchProvider: app results -->
+    <!-- R.layout.branch_inapp_app : the container -->
+    <attr name="branchInAppAppContainer" format="reference"/>
+    <!-- R.layout.branch_inapp_app : the app icon -->
+    <attr name="branchInAppAppIcon" format="reference"/>
+    <!-- R.layout.branch_inapp_app : the app name -->
+    <attr name="branchInAppAppName" format="reference"/>
+    <!-- R.layout.branch_inapp_app : the app label -->
+    <attr name="branchInAppAppLabel" format="reference"/>
+
+    <!-- AutocompleteProvider: suggestions controls -->
+    <!-- R.layout.branch_autocomplete : the container -->
+    <attr name="branchAutocompleteContainer" format="reference"/>
+    <!-- R.layout.branch_autocomplete : the search icon -->
+    <attr name="branchAutocompleteIcon" format="reference"/>
+    <!-- R.layout.branch_autocomplete : the autocomplete text -->
+    <attr name="branchAutocompleteText" format="reference"/>
+
+    <!-- AppsProvider: apps controls -->
+    <!-- R.layout.branch_app : the app icon -->
+    <attr name="branchAppIcon" format="reference"/>
+    <!-- R.layout.branch_app : the app label -->
+    <attr name="branchAppLabel" format="reference"/>
+
+    <!-- InAppSearchProvider: 'install' ads controls -->
+    <!-- R.layout.branch_inapp_ad_install : the container -->
+    <attr name="branchInAppAdInstallContainer" format="reference"/>
+    <!-- R.layout.branch_inapp_ad_install : the 'sponsored' label -->
+    <attr name="branchInAppAdInstallLabel" format="reference"/>
+    <!-- R.layout.branch_inapp_ad_install : the ad image -->
+    <attr name="branchInAppAdInstallImage" format="reference"/>
+    <!-- R.layout.branch_inapp_ad_install : the title, like 'recommended apps' -->
+    <attr name="branchInAppAdInstallTitle" format="reference"/>
+    <!-- R.layout.branch_inapp_ad_install : the ad title -->
+    <attr name="branchInAppAdInstallContentTitle" format="reference"/>
+    <!-- R.layout.branch_inapp_ad_install : the ad description -->
+    <attr name="branchInAppAdInstallContentDescription" format="reference"/>
+
+</resources>

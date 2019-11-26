@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "io.branch.sample.widget"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        archivesBaseName = rootProject.ext.branch + "-" + versionName
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "implementation"
+    productFlavors {
+        local { dimension "implementation" }
+        aar { dimension "implementation" }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name == 'preAarDebugBuild' || task.name == 'preAarReleaseBuild') {
+        task.dependsOn ':branchuisdk:assembleRelease'
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    // Own dependencies: none
+
+    // Local implementation: Just import the branchuisdk module
+    localImplementation project(':branchuisdk')
+
+    // AAR implementation: First import the compiled AAR file...
+    // NOTE: when fetching the repo from GitHub in a new project and opening for the first time,
+    // for some reason Gradle tries to evaluate this dependency during configuration and the
+    // "Gradle Sync" process fails because we don't have any AAR yet and we can't build one.
+    // To ensure that the sync phase completes correctly, we check that the file exists.
+    // TODO find a proper solution
+    if (file('./libs/branchuisdk-release.aar').exists()) {
+        aarImplementation(name: 'branchuisdk-release', ext: 'aar')
+    }
+
+    // Then add all the AAR dependencies:
+    aarImplementation 'com.android.support:design:28.0.0'
+    aarImplementation 'com.android.support:appcompat-v7:28.0.0'
+    aarImplementation 'com.android.support:recyclerview-v7:28.0.0'
+    aarImplementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    aarImplementation 'com.android.support:preference-v7:28.0.0'
+    aarImplementation 'android.arch.lifecycle:extensions:1.1.1'
+    aarImplementation 'com.google.android.gms:play-services-location:16.0.0'
+    aarImplementation 'io.branch.sdk.android:search:1.3.7'
+    aarImplementation 'io.branch.sdk.android:library:3.2.0'
+    aarImplementation 'com.facebook.fresco:fresco:1.12.1'
+    aarImplementation 'com.squareup.okhttp3:okhttp:3.12.6'
+    aarImplementation 'androidx.room:room-runtime:2.2.0'
+    aarAnnotationProcessor 'androidx.room:room-compiler:2.2.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

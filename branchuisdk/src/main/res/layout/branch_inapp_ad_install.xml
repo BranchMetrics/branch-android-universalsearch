@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    style="?attr/branchInAppAdInstallContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/branch_inapp_ad_install_margin_top"
+    android:layout_marginBottom="@dimen/branch_inapp_ad_install_margin_bottom"
+    android:layout_marginLeft="@dimen/branch_inapp_ad_install_margin_horizontal"
+    android:layout_marginRight="@dimen/branch_inapp_ad_install_margin_horizontal">
+
+    <TextView
+        style="?attr/branchInAppAdInstallTitle"
+        android:id="@+id/app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sponsored"
+        tools:text="Recommended apps"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/branch_inapp_app_divider_height"
+        android:layout_marginStart="@dimen/branch_inapp_ad_install_inner_spacing"
+        android:layout_marginEnd="@dimen/branch_inapp_ad_install_inner_spacing"
+        android:background="@drawable/branch_branch_app_divider"
+        app:layout_constraintTop_toTopOf="@id/app_name"
+        app:layout_constraintBottom_toBottomOf="@id/app_name"
+        app:layout_constraintStart_toEndOf="@id/app_name"
+        app:layout_constraintEnd_toStartOf="@id/sponsored"/>
+
+
+    <TextView
+        style="?attr/branchInAppAdInstallLabel"
+        android:id="@+id/sponsored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/app_name"
+        app:layout_constraintBottom_toBottomOf="@id/app_name"
+        app:layout_constraintStart_toEndOf="@id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/branch_discover_sponsored" />
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        style="?attr/branchInAppAdInstallImage"
+        android:id="@+id/image"
+        android:layout_marginTop="@dimen/branch_inapp_ad_install_icon_margin_top"
+        android:layout_marginEnd="@dimen/branch_inapp_ad_install_icon_margin_end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/link_name"
+        app:layout_constraintTop_toBottomOf="@id/app_name" />
+
+    <TextView
+        style="?attr/branchInAppAdInstallContentTitle"
+        android:id="@+id/link_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image"
+        android:layout_marginTop="@dimen/branch_inapp_ad_install_content_title_margin_top"
+        tools:text="Try the Instagram app"/>
+
+    <TextView
+        style="?attr/branchInAppAdInstallContentDescription"
+        android:id="@+id/link_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/link_name"
+        app:layout_constraintStart_toStartOf="@id/link_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/branch_inapp_ad_install_content_description_margin_top"
+        tools:text="Link description Link description Link description Link description"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,95 @@
+<resources>
+    <string name="branch_widget_hint_text">Search for anything</string>
+    <string name="branch_lucky">I feel lucky!</string>
+
+    <!-- Discovery Titles -->
+    <string name="branch_provider_title">In-App Results</string>
+    <string name="branch_shortcut_provider_title">Shortcuts</string>
+    <string name="branch_media_provider_title">Files</string>
+    <string name="branch_autocomplete_provider_title">Web</string>
+    <string name="branch_media_provider_open">Open with…</string>
+    <string name="branch_contacts_provider_title">Contacts</string>
+    <string name="branch_suggested_apps_provider_title">Suggested Apps</string>
+    <string name="branch_suggested_contacts_provider_title">Suggested Contacts</string>
+
+    <string name="branch_search_engine">\"%s\"</string>
+
+    <string name="branch_discover_all_results">All Results</string>
+    <string name="branch_discover_local">Installed</string>
+    <string name="branch_discover_web">Web results</string>
+    <string name="branch_discover_sponsored">Sponsored</string>
+
+    <string name="branch_provider_toggle_more">More</string>
+    <string name="branch_provider_toggle_less">Less</string>
+
+    <!-- Settings -->
+    <string name="shortcut_subtitle">Settings</string>
+
+    <string name="shortcut_airplane_mode">Airplane mode</string>
+    <string name="shortcut_wireless">Network &amp; Internet</string>
+    <string name="shortcut_bluetooth">Bluetooth</string>
+    <string name="shortcut_add_account">Add account</string>
+    <string name="shortcut_applications">Applications</string>
+    <string name="shortcut_battery_saver">Battery Saver</string>
+    <string name="shortcut_mobile_network">Mobile Network</string>
+    <string name="shortcut_device_info">Device Info</string>
+    <string name="shortcut_accessibility">Accessibility</string>
+    <string name="shortcut_video_captions">Video Captions</string>
+    <string name="shortcut_cast">Cast Devices</string>
+    <string name="shortcut_data_usage">Data Usage</string>
+    <string name="shortcut_date_and_time">Date &amp; Time</string>
+    <string name="shortcut_display">Display</string>
+    <string name="shortcut_screen_saver">Screen Saver</string>
+    <string name="shortcut_hard_keyboard">Physical Keyboard</string>
+    <string name="shortcut_default_apps">Default Apps</string>
+    <string name="shortcut_virtual_keyboards">Virtual Keyboards</string>
+    <string name="shortcut_storage">Storage</string>
+    <string name="shortcut_languages">Languages</string>
+    <string name="shortcut_location">Location</string>
+    <string name="shortcut_nfc">NFC</string>
+    <string name="shortcut_android_beam">Android Beam</string>
+    <string name="shortcut_printing">Printing</string>
+    <string name="shortcut_memory_card">Memory Card</string>
+    <string name="shortcut_data_roaming">Data Roaming</string>
+    <string name="shortcut_google_search">Google Search</string>
+    <string name="shortcut_security">Security</string>
+    <string name="shortcut_settings">All settings</string>
+    <string name="shortcut_sound_and_vibration">Sound &amp; Vibration</string>
+    <string name="shortcut_account_sync">Account Sync</string>
+    <string name="shortcut_personal_dictionary">Personal Dictionary</string>
+    <string name="shortcut_vpn">VPN Settings</string>
+    <string name="shortcut_wifi">Wi-Fi</string>
+    <string name="shortcut_wifi_preferences">Wi-Fi Preferences</string>
+    <string name="shortcut_do_not_disturb">Do Not Disturb</string>
+
+    <!-- Discovery Providers - Accessed by reflection by loader.
+    NOTE: adding/removing providers? Consider changing the core thread pool size
+          in io.branch.search.widget.task.AndroidAsyncTask !
+          Our thread pool is now based on the number of providers, excluding the zero-state
+          providers which only work with empty queries.
+    -->
+    <string-array name="IDiscoveryProvider">
+        <item>io.branch.search.widget.provider.SuggestedAppsProvider</item>
+        <item>io.branch.search.widget.provider.SuggestedContactsProvider</item>
+        <item>io.branch.search.widget.provider.AutoCompleteProvider</item>
+        <item>io.branch.search.widget.provider.AppsProvider</item>
+        <item>io.branch.search.widget.provider.ContactsProvider</item>
+        <item>io.branch.search.widget.provider.MediaProvider</item>
+        <item>io.branch.search.widget.provider.ShortcutProvider</item>
+        <item>io.branch.search.widget.provider.InAppSearchProvider</item>
+    </string-array>
+
+    <string name="branchapp_settings_title">Settings</string>
+    <string name="branchapp_settings_category">Search result types</string>
+    <string name="branchapp_settings_provider_branch">App Content</string>
+    <string name="branchapp_settings_provider_branch_summary">Include in-app search results and suggestions.</string>
+    <string name="branchapp_settings_provider_contacts">Contacts</string>
+    <string name="branchapp_settings_provider_contacts_summary">Include search results from contacts.</string>
+    <string name="branchapp_settings_provider_files">Files</string>
+    <string name="branchapp_settings_provider_files_summary">Include search results from local files.</string>
+    <string name="branchapp_settings_other">Other</string>
+    <string name="branchapp_settings_non_installed_apps">Not installed apps</string>
+    <string name="branchapp_settings_non_installed_apps_summary">Include results from apps that are not installed on this device.</string>
+
+
+</resources>

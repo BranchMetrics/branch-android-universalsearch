@@ -1,0 +1,4 @@
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:inset="6dp"
+    android:drawable="@drawable/branch_ic_apps_raw_24dp"/>
+<!-- Just a wrapper around branch_ic_apps_raw which has no margin unlike material icons -->

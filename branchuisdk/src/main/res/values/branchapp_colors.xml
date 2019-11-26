@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Do NOT remove white spaces. They help solving merge conflicts. -->
+
+    <!-- Search editText: color of the box background -->
+    <color name="branchapp_edit_text_box_background">#FFFFFF</color>
+    <!-- Search editText: color of the icons -->
+    <color name="branchapp_edit_text_icons">#727272</color>
+    <!-- Search editText: focused text color -->
+    <color name="branchapp_edit_text_text_focused">#8a000000</color>
+    <!-- Search editText: unfocused text color -->
+    <color name="branchapp_edit_text_text_unfocused">#8a000000</color>
+
+    <color name="branchapp_edit_text_search_icon_unfocused">@color/branchapp_edit_text_icons</color>
+    <color name="branchapp_edit_text_search_icon_focused">@color/branchapp_edit_text_icons</color>
+
+    <!-- AppBars -->
+    <color name="branchapp_appbar">@color/branch_highlight</color>
+
+    <!-- Tabs: color of the horizontal indicator line -->
+    <color name="branchapp_tab_indicator">@android:color/white</color>
+    <!-- Tabs: color of the icon of a selected tab -->
+    <color name="branchapp_tab_icon_selected">@color/branchapp_tab_indicator</color>
+    <!-- Tabs: color of the icon of an unselected tab -->
+    <color name="branchapp_tab_icon_unselected">#b3ffffff</color>
+    <!-- Tabs: color of the text of a selected tab -->
+    <color name="branchapp_tab_text_selected">@color/branchapp_tab_indicator</color>
+    <!-- Tabs: color of the text of an unselected tab -->
+    <color name="branchapp_tab_text_unselected">#b3ffffff</color>
+
+    <!-- App widget: color of the icon -->
+    <color name="branchapp_widget_icon">#C0C0C0</color>
+    <!-- App widget: background color -->
+    <color name="branchapp_widget_background">#CCeeeeee</color>
+    <!-- App widget: text color -->
+    <color name="branchapp_widget_text">#666666</color>
+
+    <!-- Settings -->
+    <color name="branchapp_settings_title_text">@color/branch_text_regular</color>
+    <color name="branchapp_settings_description_text">@color/branch_text_secondary</color>
+    <color name="branchapp_settings_category_text">@color/branch_highlight_secondary</color>
+    <color name="branchapp_settings_divider">#4DA2A2A2</color>
+</resources>

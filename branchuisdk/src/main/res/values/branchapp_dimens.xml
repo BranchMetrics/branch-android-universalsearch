@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Do NOT remove white spaces. They help solving merge conflicts. -->
+
+    <!-- App widget: corner radius -->
+    <dimen name="branchapp_widget_corner_radius">20dp</dimen>
+    <!-- App widget: horizontal margin -->
+    <dimen name="branchapp_widget_side_margin">20dp</dimen>
+    <!-- App widget: top margin -->
+    <dimen name="branchapp_widget_top_margin">15dp</dimen>
+
+    <!-- Search edit text: text size -->
+    <dimen name="branchapp_edit_text_text">16sp</dimen>
+    <!-- Search edit text: internal horizontal padding -->
+    <dimen name="branchapp_edit_text_padding">4dp</dimen>
+    <!-- Search edit text box: external margins -->
+    <dimen name="branchapp_edit_text_box_margin_top">16dp</dimen>
+    <dimen name="branchapp_edit_text_box_margin_bottom">16dp</dimen>
+    <dimen name="branchapp_edit_text_box_margin_horizontal">16dp</dimen>
+    <!-- Search edit text box: shadow -->
+    <dimen name="branchapp_edit_text_box_elevation">2dp</dimen>
+    <!-- Search edit text box: height -->
+    <dimen name="branchapp_edit_text_box_height">42dp</dimen>
+    <!-- Search edit text box: background corner radius (should be about height/2) -->
+    <dimen name="branchapp_edit_text_box_background_radius">@dimen/branchapp_widget_corner_radius</dimen>
+
+    <dimen name="branchapp_tab_label_text">14sp</dimen>
+
+    <!-- Settings -->
+    <dimen name="branchapp_settings_padding_start">16dp</dimen>
+    <dimen name="branchapp_settings_padding_end">16dp</dimen>
+    <dimen name="branchapp_settings_title_text">16sp</dimen>
+    <dimen name="branchapp_settings_description_text">14sp</dimen>
+    <dimen name="branchapp_settings_category_text">14sp</dimen>
+    <!-- There seems to be a bug in PreferenceFragmentCompat due to which vertical margins
+         in the divider are not respected. So for now 0dp should be used. -->
+    <dimen name="branchapp_settings_divider_margin_top">0dp</dimen>
+    <dimen name="branchapp_settings_divider_margin_bottom">0dp</dimen>
+    <dimen name="branchapp_settings_divider_margin_horizontal">0dp</dimen>
+</resources>

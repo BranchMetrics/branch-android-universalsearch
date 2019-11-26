@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    style="?attr/branchInAppLinkContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        style="?attr/branchInAppLinkImage"
+        android:id="@+id/discovery_place_img"
+        app:layout_constraintEnd_toStartOf="@id/discovery_place_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/branch_inapp_link_icon_margin_end" />
+
+    <TextView
+        style="?attr/branchInAppLinkTitle"
+        android:id="@+id/discovery_place_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/branch_inapp_link_title_margin_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discovery_place_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Title asdada asdasdads adsasdasasdas adasda asdasd asdas asdasd" />
+
+    <TextView
+        style="?attr/branchInAppLinkDescription"
+        android:id="@+id/discovery_place_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/branch_inapp_link_description_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/discovery_place_title"
+        app:layout_constraintStart_toStartOf="@+id/discovery_place_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="description" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,5 @@
+Google AutoComplete search for "piz"
+$ curl 'http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=piz&gl=US&client=chrome'
+
+Google AutoComplete search for "pho"
+curl 'http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=pho&gl=US&client=chrome'

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    style="?attr/branchContactContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <io.branch.search.widget.ui.widget.ContactImageView
+        style="?attr/branchContactImage"
+        android:id="@+id/branch_contact_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="?attr/branchContactLetter"
+        android:id="@+id/branch_contact_letter"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage"
+        tools:text="A" />
+
+    <TextView
+        style="?attr/branchContactName"
+        android:id="@+id/branch_contact_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/branch_contact_name_margin_start"
+        android:layout_marginEnd="@dimen/branch_contact_name_margin_end"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/branch_contact_number"
+        app:layout_constraintEnd_toStartOf="@+id/branch_contact_call"
+        app:layout_constraintStart_toEndOf="@+id/branch_contact_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Bla bla bla bla" />
+
+    <TextView
+        style="?attr/branchContactNumber"
+        android:id="@+id/branch_contact_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/branch_contact_name"
+        app:layout_constraintTop_toBottomOf="@+id/branch_contact_name"
+        tools:text="+12 830 8329 80342" />
+
+    <ImageButton
+        style="?attr/branchContactButtonCall"
+        android:id="@+id/branch_contact_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/branch_contact_actions_spacing"
+        app:layout_constraintBottom_toBottomOf="@+id/branch_contact_letter"
+        app:layout_constraintEnd_toStartOf="@+id/branch_contact_message"
+        app:layout_constraintTop_toTopOf="@+id/branch_contact_letter" />
+
+    <ImageButton
+        style="?attr/branchContactButtonMessage"
+        android:id="@+id/branch_contact_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/branch_contact_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/branch_contact_call" />
+
+</android.support.constraint.ConstraintLayout>

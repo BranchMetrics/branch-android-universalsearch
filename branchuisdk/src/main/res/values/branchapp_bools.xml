@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="branchapp_settings_icon_space_reserved">true</bool>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="?attr/branchInAppAppContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        style="?attr/branchInAppAppIcon"
+        android:id="@+id/discovery_app_result_img" />
+
+    <TextView
+        style="?attr/branchInAppAppName"
+        android:id="@+id/discovery_app_result_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/branch_inapp_app_inner_spacing"
+        android:gravity="center_vertical"
+        tools:text="Instagram"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/branch_inapp_app_divider_height"
+        android:layout_marginStart="@dimen/branch_inapp_app_inner_spacing"
+        android:layout_weight="1"
+        android:background="@drawable/branch_branch_app_divider" />
+
+    <TextView
+        style="?attr/branchInAppAppLabel"
+        android:id="@+id/discovery_app_result_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/branch_inapp_app_inner_spacing"
+        android:gravity="center_vertical"
+        tools:text="Web results"/>
+
+</LinearLayout>

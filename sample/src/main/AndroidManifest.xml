@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.branch.sample.widget">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/branch_ic_launcher"
+        android:label="@string/sample_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BranchApp.AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <receiver android:name="io.branch.search.widget.app.BranchSearchWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/branchapp_widget" />
+        </receiver>
+
+        <!-- adjustPan is needed, or the AppBar gets a huge bottom
+             padding when keyboard is opened ,due to fitSystemWindows=true -->
+        <activity android:name="io.branch.search.widget.app.BranchSearchActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- The demo Branch Key.  Please replace this key with your own key before release. -->
+        <!--<meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_jgKhogSvbj1sZ7PJiQ47dfkozAmfeA4H" />-->
+        <!-- Beta provider -->
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_ekzqC49363HuS7qlHunMQfnnzyj4F1jr" />
+    </application>
+
+ </manifest>

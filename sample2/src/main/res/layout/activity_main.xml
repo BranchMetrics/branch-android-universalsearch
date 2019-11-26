@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/search"
+        android:padding="16dp"
+        android:background="#DDDDDD"
+        android:elevation="4dp"
+        android:hint="Search anything..."
+        android:imeOptions="flagNoExtractUi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <io.branch.search.widget.BranchSearchResultsView
+        android:id="@+id/results"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

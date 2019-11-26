@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Do NOT remove white spaces. They help solving merge conflicts. -->
+
+    <!-- R.layout.branchapp_tab_search : the edit text box -->
+    <attr name="branchAppSearchTabEditBox" format="reference"/>
+    <!-- R.layout.branchapp_tab_search : the settings icon -->
+    <attr name="branchAppSearchTabSettingsIcon" format="reference"/>
+    <!-- R.layout.branchapp_tab_search : the search icon -->
+    <attr name="branchAppSearchTabSearchIcon" format="reference"/>
+    <!-- R.layout.branchapp_tab_search : the loading indicator -->
+    <attr name="branchAppSearchTabLoadingIndicator" format="reference"/>
+    <!-- R.layout.branchapp_tab_search : the cancel icon -->
+    <attr name="branchAppSearchTabCancelIcon" format="reference"/>
+    <!-- R.layout.branchapp_tab_search : the microphone icon -->
+    <attr name="branchAppSearchTabMicrophoneIcon" format="reference"/>
+    <!-- R.layout.branchapp_tab_search : the edit text -->
+    <attr name="branchAppSearchTabEditText" format="reference"/>
+
+    <!-- R.layout.branchapp_settings_fragment : the top toolbar -->
+    <attr name="branchAppSettingsToolbar" format="reference"/>
+
+    <!-- R.layout.branchapp_tabs_fragment : the tab layout -->
+    <attr name="branchAppFragmentTabLayout" format="reference"/>
+    <!-- R.layout.branchapp_tabs_fragment : the tab layout label -->
+    <attr name="branchAppFragmentTabLayoutLabel" format="reference"/>
+</resources>

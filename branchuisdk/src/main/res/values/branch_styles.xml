@@ -1,0 +1,504 @@
+<resources>
+
+    <!-- Base style. It's better to apply fontFamily here to make sure it is applied to all
+    components, even those who we do not fully control like settings, toolbars, ... -->
+    <style name="Branch">
+        <!-- To use custom fonts, apply here and below -->
+        <!--item name="android:fontFamily">@font/custom_font</item>
+        <item name="fontFamily">@font/custom_font</item-->
+    </style>
+
+    <style name="Branch.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/branch_highlight</item>
+        <item name="colorAccent">@color/branch_highlight_secondary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- These apply Branch font to all text and edit views -->
+        <item name="android:textViewStyle">@style/Branch.TextView</item>
+        <item name="editTextStyle">@style/Branch.EditText</item>
+        <!-- Text appearances -->
+        <item name="branchListTitle">@style/Branch.Text.ListTitle</item>
+        <item name="branchListTitleSmall">@style/Branch.Text.ListTitleSmall</item>
+        <item name="branchListMediumTitle">@style/Branch.Text.ListMediumTitle</item>
+        <item name="branchListSubtitle">@style/Branch.Text.ListSubtitle</item>
+        <item name="branchListSubtitleSmall">@style/Branch.Text.ListSubtitleSmall</item>
+        <item name="branchListMediumSubtitle">@style/Branch.Text.ListMediumSubtitle</item>
+        <item name="branchListOverline">@style/Branch.Text.ListOverline</item>
+        <!-- View styles. -->
+        <!-- Do NOT remove white spaces. They help solving merge conflicts. -->
+        <item name="branchSectionHeaderTitle">@style/Branch.View.ProviderHeaderTitle</item>
+        <item name="branchSectionHeaderLine">@style/Branch.View.ProviderHeaderLine</item>
+        <item name="branchSectionHeaderToggle">@style/Branch.View.ProviderHeaderToggle</item>
+        <item name="branchSectionHeaderToggleIcon">@style/Branch.View.ProviderHeaderToggleIcon</item>
+
+        <item name="branchAllAppsRecycler">@style/Branch.View.AllAppsRecycler</item>
+
+        <item name="branchShortcutTitle">@style/Branch.View.ShortcutTitle</item>
+        <item name="branchShortcutSubtitle">@style/Branch.View.ShortcutSubtitle</item>
+        <item name="branchShortcutIcon">@style/Branch.View.ShortcutIcon</item>
+
+        <item name="branchMediaIcon">@style/Branch.View.MediaIcon</item>
+        <item name="branchMediaLabel">@style/Branch.View.MediaLabel</item>
+
+        <item name="branchSearchEngineContainer">@style/Branch.View.SearchEngineContainer</item>
+        <item name="branchSearchEngineIcon">@style/Branch.View.SearchEngineIcon</item>
+        <item name="branchSearchEngineLabel">@style/Branch.View.SearchEngineLabel</item>
+
+        <item name="branchInAppFilterContainer">@style/Branch.View.FilterContainer</item>
+        <item name="branchInAppFilterIcon">@style/Branch.View.FilterIcon</item>
+        <item name="branchInAppFilterLabel">@style/Branch.View.FilterLabel</item>
+
+        <item name="branchContactContainer">@style/Branch.View.ContactContainer</item>
+        <item name="branchContactImage">@style/Branch.View.ContactImage</item>
+        <item name="branchContactLetter">@style/Branch.View.ContactLetter</item>
+        <item name="branchContactName">@style/Branch.View.ContactName</item>
+        <item name="branchContactNumber">@style/Branch.View.ContactNumber</item>
+        <item name="branchContactButtonCall">@style/Branch.View.ContactButtonCall</item>
+        <item name="branchContactButtonMessage">@style/Branch.View.ContactButtonMessage</item>
+
+        <item name="branchInAppLinkContainer">@style/Branch.View.BranchLinkContainer</item>
+        <item name="branchInAppLinkImage">@style/Branch.View.BranchLinkImage</item>
+        <item name="branchInAppLinkTitle">@style/Branch.View.BranchLinkTitle</item>
+        <item name="branchInAppLinkDescription">@style/Branch.View.BranchLinkDescription</item>
+
+        <item name="branchInAppAppContainer">@style/Branch.View.BranchAppContainer</item>
+        <item name="branchInAppAppIcon">@style/Branch.View.BranchAppIcon</item>
+        <item name="branchInAppAppName">@style/Branch.View.BranchAppName</item>
+        <item name="branchInAppAppLabel">@style/Branch.View.BranchAppLabel</item>
+
+        <item name="branchAutocompleteContainer">@style/Branch.View.AutocompleteContainer</item>
+        <item name="branchAutocompleteIcon">@style/Branch.View.AutocompleteIcon</item>
+        <item name="branchAutocompleteText">@style/Branch.View.AutocompleteText</item>
+
+        <item name="branchAppIcon">@style/Branch.View.AppIcon</item>
+        <item name="branchAppLabel">@style/Branch.View.AppLabel</item>
+
+        <item name="branchInAppAdInstallContainer">@style/Branch.View.AdInstallContainer</item>
+        <item name="branchInAppAdInstallLabel">@style/Branch.View.AdInstallLabel</item>
+        <item name="branchInAppAdInstallImage">@style/Branch.View.AdInstallImage</item>
+        <item name="branchInAppAdInstallTitle">@style/Branch.View.AdInstallTitle</item>
+        <item name="branchInAppAdInstallContentTitle">@style/Branch.View.AdInstallContentTitle</item>
+        <item name="branchInAppAdInstallContentDescription">@style/Branch.View.AdInstallContentDescription</item>
+    </style>
+
+    <!-- ************** -->
+    <!-- DEFAULT STYLES -->
+    <!-- ************** -->
+
+    <style name="Branch.TextView" parent="android:Widget.TextView">
+        <!-- To use custom fonts, apply here -->
+        <!--item name="android:fontFamily">@font/custom_font</item>
+        <item name="fontFamily">@font/custom_font</item-->
+    </style>
+
+    <style name="Branch.EditText" parent="Widget.AppCompat.EditText">
+        <!-- To use custom fonts, apply here -->
+        <!--item name="android:fontFamily">@font/custom_font</item>
+        <item name="fontFamily">@font/custom_font</item-->
+    </style>
+
+    <!-- **************** -->
+    <!-- TEXT APPEARANCES -->
+    <!-- **************** -->
+
+    <style name="Branch.Text" />
+
+    <!-- List title (regular) -->
+    <style name="Branch.Text.ListTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/branch_text_regular</item>
+    </style>
+
+    <!-- List title (regular, smaller) -->
+    <style name="Branch.Text.ListTitleSmall" parent="Branch.Text.ListTitle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- List title (medium) -->
+    <style name="Branch.Text.ListMediumTitle" parent="Branch.Text.ListTitle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- List subtitle (regular) -->
+    <style name="Branch.Text.ListSubtitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/branch_text_secondary</item>
+    </style>
+
+    <!-- List subtitle (regular, smaller) -->
+    <style name="Branch.Text.ListSubtitleSmall" parent="Branch.Text.ListSubtitle">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- List subtitle (medium) -->
+    <style name="Branch.Text.ListMediumSubtitle" parent="Branch.Text.ListSubtitle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Very small detail text (regular) -->
+    <style name="Branch.Text.ListOverline">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/branch_text_secondary</item>
+    </style>
+
+    <!-- *********** -->
+    <!-- VIEW STYLES -->
+    <!-- *********** -->
+
+    <style name="Branch.View" />
+
+    <!-- R.layout.branch_section_header : the header title -->
+    <style name="Branch.View.ProviderHeaderTitle">
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAppearance">?attr/branchListMediumTitle</item>
+    </style>
+
+    <!-- R.layout.branch_section_header : the header line -->
+    <style name="Branch.View.ProviderHeaderLine">
+        <item name="android:layout_width">@dimen/branch_spacing_extra_small</item>
+        <item name="android:background">@color/branch_provider_header_line</item>
+    </style>
+
+    <!-- R.layout.branch_section_header : the header toggle -->
+    <style name="Branch.View.ProviderHeaderToggle">
+        <item name="android:textAppearance">?attr/branchListOverline</item>
+    </style>
+
+    <!-- R.layout.branch_section_header : the header toggle icon -->
+    <style name="Branch.View.ProviderHeaderToggleIcon">
+        <item name="android:layout_width">@dimen/branch_section_header_toggle_icon</item>
+        <item name="android:layout_height">@dimen/branch_section_header_toggle_icon</item>
+        <item name="android:tint">@color/branch_provider_header_toggle_icon</item>
+    </style>
+
+    <!-- R.layout.branch_provider_all_apps : the 'all apps' recycler -->
+    <style name="Branch.View.AllAppsRecycler">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:elevation">@dimen/branch_provider_elevation</item>
+        <item name="android:background">@drawable/branch_provider_background</item>
+        <item name="android:paddingLeft">@dimen/branch_provider_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/branch_provider_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/branch_allapps_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/branch_allapps_vertical_padding</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarSize">@dimen/branch_scrollbar_width</item>
+        <item name="android:scrollbarThumbVertical">@drawable/branch_scrollbar_thumb</item>
+        <item name="android:scrollbarTrackVertical">@drawable/branch_scrollbar_track</item>
+        <item name="android:scrollbarStyle">outsideInset</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:layoutAnimation">@anim/branch_layout_fall_down</item>
+    </style>
+
+    <!-- R.layout.branch_shortcut : the shortcut title -->
+    <style name="Branch.View.ShortcutTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">?attr/branchListTitle</item>
+    </style>
+
+    <!-- R.layout.branch_shortcut : the shortcut subtitle -->
+    <style name="Branch.View.ShortcutSubtitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">?attr/branchListSubtitle</item>
+    </style>
+
+    <!-- R.layout.branch_shortcut : the shortcut icon -->
+    <style name="Branch.View.ShortcutIcon">
+        <item name="android:layout_width">@dimen/branch_shortcut_icon</item>
+        <item name="android:layout_height">@dimen/branch_shortcut_icon</item>
+        <item name="android:tint">@color/branch_shortcut_icon</item>
+    </style>
+
+    <!-- R.layout.branch_media : the media icon -->
+    <style name="Branch.View.MediaIcon">
+        <item name="android:layout_width">@dimen/branch_media_icon</item>
+        <item name="android:layout_height">@dimen/branch_media_icon</item>
+        <item name="android:elevation">@dimen/branch_media_icon_elevation</item>
+        <item name="android:background">@drawable/branch_shape_rounded_rectangle</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <!-- R.layout.branch_media : the media label -->
+    <style name="Branch.View.MediaLabel">
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">?attr/branchListTitleSmall</item>
+    </style>
+
+    <!-- R.layout.branch_search_engine : the google container -->
+    <style name="Branch.View.SearchEngineContainer">
+        <item name="android:paddingBottom">@dimen/branch_search_engine_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/branch_search_engine_padding_top</item>
+        <item name="android:paddingStart">@dimen/branch_search_engine_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/branch_search_engine_padding_horizontal</item>
+        <item name="android:background">@drawable/branch_shape_rounded_rectangle</item>
+        <item name="android:backgroundTint">@color/branch_search_engine_background</item>
+    </style>
+
+    <!-- R.layout.branch_search_engine : the google icon -->
+    <style name="Branch.View.SearchEngineIcon">
+        <item name="android:layout_width">@dimen/branch_search_engine_icon</item>
+        <item name="android:layout_height">@dimen/branch_search_engine_icon</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!-- R.layout.branch_search_engine : the google label -->
+    <style name="Branch.View.SearchEngineLabel">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?attr/branchListTitle</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_filter : the filter container -->
+    <style name="Branch.View.FilterContainer">
+        <item name="android:background">@drawable/branch_shape_rounded_rectangle</item>
+        <item name="android:backgroundTint">@color/branch_filter_background</item>
+        <item name="android:padding">@dimen/branch_inapp_filter_item_padding</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_filter : the filter icon -->
+    <style name="Branch.View.FilterIcon">
+        <item name="android:layout_width">@dimen/branch_inapp_filter_icon</item>
+        <item name="android:layout_height">@dimen/branch_inapp_filter_icon</item>
+        <item name="roundAsCircle">true</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_filter : the filter label -->
+    <style name="Branch.View.FilterLabel">
+        <item name="android:textSize">@dimen/branch_inapp_filter_text</item>
+        <item name="android:textColor">@color/branch_filter_text</item>
+        <!-- For nice appearance, give minHeight = icon size -->
+        <item name="android:minHeight">@dimen/branch_inapp_filter_icon</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!-- R.layout.branch_contact : the contact container -->
+    <style name="Branch.View.ContactContainer">
+        <item name="android:background">@drawable/branch_shape_rounded_rectangle</item>
+        <item name="android:backgroundTint">@color/branch_contact_background</item>
+        <item name="android:paddingStart">@dimen/branch_contact_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/branch_contact_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/branch_contact_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/branch_contact_padding_vertical</item>
+        <!-- For shadow to be visible, apply bottomMargin=elevation -->
+        <item name="android:elevation">@dimen/branch_contact_elevation</item>
+        <item name="android:layout_marginBottom">@dimen/branch_contact_elevation</item>
+    </style>
+
+    <!-- R.layout.branch_contact : the contact image -->
+    <style name="Branch.View.ContactImage">
+        <item name="android:layout_width">@dimen/branch_contact_icon_size</item>
+        <item name="android:layout_height">@dimen/branch_contact_icon_size</item>
+        <!-- For shadow to be visible, apply margin=elevation -->
+        <item name="android:elevation">@dimen/branch_contact_icon_elevation</item>
+        <item name="android:layout_margin">@dimen/branch_contact_icon_elevation</item>
+    </style>
+
+    <!-- R.layout.branch_contact : the contact letter -->
+    <style name="Branch.View.ContactLetter">
+        <item name="android:layout_width">@dimen/branch_contact_icon_size</item>
+        <item name="android:layout_height">@dimen/branch_contact_icon_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/branch_contact_letter_size</item>
+        <!-- For shadow to be visible, apply margin=elevation -->
+        <item name="android:elevation">@dimen/branch_contact_icon_elevation</item>
+        <item name="android:layout_margin">@dimen/branch_contact_icon_elevation</item>
+    </style>
+
+    <!-- R.layout.branch_contact : the contact name -->
+    <style name="Branch.View.ContactName">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?attr/branchListTitle</item>
+    </style>
+
+    <!-- R.layout.branch_contact : the contact number -->
+    <style name="Branch.View.ContactNumber">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?attr/branchListSubtitle</item>
+        <!-- Disabled in the bubble format. Can be enabled if columns = 1 -->
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- R.layout.branch_contact : the contact call button -->
+    <style name="Branch.View.ContactButtonCall">
+        <item name="android:src">@drawable/branch_ic_phone_24dp</item>
+        <item name="android:tint">@color/branch_contact_action_tint</item>
+        <item name="android:padding">@dimen/branch_contact_action_padding</item>
+        <item name="android:elevation">@dimen/branch_contact_action_elevation</item>
+        <item name="android:background">@drawable/branch_shape_circle</item>
+        <item name="android:backgroundTint">@color/branch_contact_actions_background</item>
+        <!-- Disabled in the bubble format. Can be enabled if columns = 1 -->
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- R.layout.branch_contact : the contact message button -->
+    <style name="Branch.View.ContactButtonMessage">
+        <item name="android:src">@drawable/branch_ic_message_24dp</item>
+        <item name="android:tint">@color/branch_contact_action_tint</item>
+        <item name="android:padding">@dimen/branch_contact_action_padding</item>
+        <item name="android:elevation">@dimen/branch_contact_action_elevation</item>
+        <item name="android:background">@drawable/branch_shape_circle</item>
+        <item name="android:backgroundTint">@color/branch_contact_actions_background</item>
+        <!-- Disabled in the bubble format. Can be enabled if columns = 1 -->
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_link : the container -->
+    <style name="Branch.View.BranchLinkContainer">
+        <item name="android:paddingStart">@dimen/branch_inapp_link_spacing_start</item>
+        <item name="android:paddingEnd">@dimen/branch_inapp_link_spacing_end</item>
+        <item name="android:paddingBottom">@dimen/branch_inapp_link_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/branch_inapp_link_padding_top</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_link : the item image -->
+    <style name="Branch.View.BranchLinkImage">
+        <item name="android:layout_width">@dimen/branch_inapp_link_icon</item>
+        <item name="android:layout_height">@dimen/branch_inapp_link_icon</item>
+        <item name="roundedCornerRadius">@dimen/branch_inapp_link_icon_corner_radius</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_link : the item title -->
+    <style name="Branch.View.BranchLinkTitle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">?attr/branchListTitle</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_link : the item description -->
+    <style name="Branch.View.BranchLinkDescription">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">?attr/branchListSubtitle</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_app : the container -->
+    <style name="Branch.View.BranchAppContainer">
+        <item name="android:paddingStart">@dimen/branch_inapp_app_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/branch_inapp_app_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/branch_inapp_app_padding_top</item>
+        <item name="android:paddingBottom">@dimen/branch_inapp_app_padding_bottom</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_app : the app icon -->
+    <style name="Branch.View.BranchAppIcon">
+        <item name="android:layout_width">@dimen/branch_inapp_app_icon</item>
+        <item name="android:layout_height">@dimen/branch_inapp_app_icon</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="roundAsCircle">true</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_app : the app name -->
+    <style name="Branch.View.BranchAppName">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?attr/branchListMediumTitle</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_app : the app label -->
+    <style name="Branch.View.BranchAppLabel">
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">@dimen/branch_inapp_app_label_padding</item>
+        <item name="android:background">@drawable/branch_shape_rounded_rectangle</item>
+        <item name="android:backgroundTint">@color/branch_inapp_app_label_background</item>
+        <item name="android:textAppearance">?attr/branchListOverline</item>
+    </style>
+
+    <!-- R.layout.branch_autocomplete : the container -->
+    <style name="Branch.View.AutocompleteContainer">
+        <item name="android:paddingBottom">@dimen/branch_autocomplete_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/branch_autocomplete_padding_top</item>
+        <item name="android:paddingStart">@dimen/branch_autocomplete_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/branch_autocomplete_padding_horizontal</item>
+        <item name="android:background">@drawable/branch_shape_rounded_rectangle</item>
+        <item name="android:backgroundTint">@color/branch_autocomplete_background</item>
+    </style>
+
+    <!-- R.layout.branch_autocomplete : the search icon -->
+    <style name="Branch.View.AutocompleteIcon">
+        <item name="android:layout_width">@dimen/branch_autocomplete_icon</item>
+        <item name="android:layout_height">@dimen/branch_autocomplete_icon</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/branch_ic_search_material_24dp</item>
+        <item name="android:tint">@color/branch_autocomplete_icon</item>
+    </style>
+
+    <!-- R.layout.branch_autocomplete : the autocomplete text -->
+    <style name="Branch.View.AutocompleteText">
+        <item name="android:ellipsize">start</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/branch_autocomplete_text</item>
+        <item name="android:textColor">@color/branch_autocomplete_text</item>
+    </style>
+
+    <!-- R.layout.branch_app : the app icon -->
+    <style name="Branch.View.AppIcon">
+        <item name="android:layout_width">@dimen/branch_apps_icon</item>
+        <item name="android:layout_height">@dimen/branch_apps_icon</item>
+        <item name="android:elevation">@dimen/branch_apps_icon_elevation</item>
+    </style>
+
+    <!-- R.layout.branch_app : the app label -->
+    <style name="Branch.View.AppLabel">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">?attr/branchListTitleSmall</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_ad_install : the container -->
+    <style name="Branch.View.AdInstallContainer">
+        <item name="android:background">@drawable/branch_shape_rounded_rectangle</item>
+        <item name="android:backgroundTint">@color/branch_inapp_ad_install_background</item>
+        <item name="android:paddingTop">@dimen/branch_inapp_ad_install_padding_top</item>
+        <item name="android:paddingBottom">@dimen/branch_inapp_ad_install_padding_bottom</item>
+        <item name="android:paddingLeft">@dimen/branch_inapp_ad_install_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/branch_inapp_ad_install_padding_horizontal</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_ad_install : the 'sponsored' label -->
+    <style name="Branch.View.AdInstallLabel">
+        <item name="android:padding">@dimen/branch_inapp_ad_install_label_padding</item>
+        <item name="android:background">@drawable/branch_shape_rounded_rectangle</item>
+        <item name="android:backgroundTint">@color/branch_inapp_ad_install_label_background</item>
+        <item name="android:textAppearance">?attr/branchListOverline</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_ad_install : the ad image -->
+    <style name="Branch.View.AdInstallImage">
+        <item name="roundedCornerRadius">@dimen/branch_inapp_ad_install_image_corner_radius</item>
+        <item name="android:layout_width">@dimen/branch_inapp_ad_install_image</item>
+        <item name="android:layout_height">@dimen/branch_inapp_ad_install_image</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_ad_install : the title, like 'recommended apps' -->
+    <style name="Branch.View.AdInstallTitle">
+        <item name="android:textAppearance">?attr/branchListMediumTitle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_ad_install : the ad title -->
+    <style name="Branch.View.AdInstallContentTitle">
+        <item name="android:textAppearance">?attr/branchListTitle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- R.layout.branch_inapp_ad_install : the ad description -->
+    <style name="Branch.View.AdInstallContentDescription">
+        <item name="android:textAppearance">?attr/branchListSubtitle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

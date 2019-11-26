@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingBottom="@dimen/branchapp_widget_top_margin"
+    android:paddingTop="@dimen/branchapp_widget_top_margin">
+
+
+    <RelativeLayout
+        android:id="@+id/appwidget_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/branchapp_edit_text_box_height"
+        android:layout_centerVertical="true"
+        android:background="@drawable/branchapp_widget_background"/>
+
+    <ImageView
+        android:id="@+id/widget_icon"
+        android:layout_width="@dimen/branch_icon"
+        android:layout_height="@dimen/branch_icon"
+        android:layout_marginLeft="@dimen/branchapp_widget_side_margin"
+        android:layout_marginRight="@dimen/branchapp_widget_side_margin"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:tint="@color/branchapp_widget_icon"
+        android:src="@drawable/branch_shape_circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/widget_icon"
+        android:contentDescription="@string/branch_widget_hint_text"
+        android:text="@string/branch_widget_hint_text"
+        android:textColor="@color/branchapp_widget_text"
+        android:textSize="@dimen/branch_widget_hint_text"
+        />
+
+</RelativeLayout>

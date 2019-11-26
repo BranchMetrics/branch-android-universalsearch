@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.branch.search.widget.app.BranchRootLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Edit text box -->
+        <View
+            style="?attr/branchAppSearchTabEditBox"
+            android:id="@+id/branchapp_edit_text_box"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/branchapp_edit_text_box_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/branchapp_settings"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/branchapp_results_view"
+            android:layout_marginLeft="@dimen/branchapp_edit_text_box_margin_horizontal"
+            android:layout_marginRight="@dimen/branchapp_edit_text_box_margin_horizontal"
+            android:layout_marginTop="@dimen/branchapp_edit_text_box_margin_top"
+            android:layout_marginBottom="@dimen/branchapp_edit_text_box_margin_bottom" />
+
+        <ImageView
+            style="?attr/branchAppSearchTabSearchIcon"
+            android:id="@+id/branchapp_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/branchapp_edit_text_box"
+            app:layout_constraintBottom_toBottomOf="@id/branchapp_edit_text_box"
+            app:layout_constraintStart_toStartOf="@id/branchapp_edit_text_box"
+            app:layout_constraintEnd_toStartOf="@id/branchapp_edit_text"
+            android:layout_margin="@dimen/branch_spacing_medium"/>
+
+        <ProgressBar
+            style="?attr/branchAppSearchTabLoadingIndicator"
+            android:id="@+id/branchapp_loading_indicator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            android:indeterminate="true"
+            app:layout_constraintTop_toTopOf="@id/branchapp_search_icon"
+            app:layout_constraintBottom_toBottomOf="@id/branchapp_search_icon"
+            app:layout_constraintStart_toStartOf="@id/branchapp_search_icon"
+            app:layout_constraintEnd_toEndOf="@id/branchapp_search_icon"
+            android:layout_margin="@dimen/branch_spacing_extra_small"/>
+
+        <EditText
+            style="?attr/branchAppSearchTabEditText"
+            android:id="@+id/branchapp_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/branch_spacing_medium"
+            android:layout_marginBottom="@dimen/branch_spacing_medium"
+            app:layout_constraintTop_toTopOf="@id/branchapp_edit_text_box"
+            app:layout_constraintBottom_toBottomOf="@id/branchapp_edit_text_box"
+            app:layout_constraintStart_toEndOf="@id/branchapp_search_icon"
+            app:layout_constraintEnd_toStartOf="@id/branchapp_cancel">
+            <requestFocus/>
+        </EditText>
+
+        <ImageView
+            style="?attr/branchAppSearchTabCancelIcon"
+            android:id="@+id/branchapp_cancel"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/branchapp_edit_text_box"
+            app:layout_constraintBottom_toBottomOf="@id/branchapp_edit_text_box"
+            app:layout_constraintStart_toEndOf="@id/branchapp_edit_text"
+            app:layout_constraintEnd_toStartOf="@id/branchapp_microphone"
+            android:layout_margin="@dimen/branch_spacing_medium" />
+
+        <ImageView
+            style="?attr/branchAppSearchTabMicrophoneIcon"
+            android:id="@+id/branchapp_microphone"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/branchapp_edit_text_box"
+            app:layout_constraintBottom_toBottomOf="@id/branchapp_edit_text_box"
+            app:layout_constraintStart_toEndOf="@id/branchapp_cancel"
+            app:layout_constraintEnd_toEndOf="@id/branchapp_edit_text_box"
+            android:layout_margin="@dimen/branch_spacing_medium" />
+
+        <ImageView
+            style="?attr/branchAppSearchTabSettingsIcon"
+            android:id="@+id/branchapp_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/branchapp_edit_text_box"
+            app:layout_constraintBottom_toBottomOf="@id/branchapp_edit_text_box"
+            app:layout_constraintStart_toEndOf="@id/branchapp_edit_text_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/branchapp_edit_text_box_margin_horizontal"/>
+
+        <io.branch.search.widget.BranchSearchResultsView
+            android:id="@+id/branchapp_results_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/branchapp_edit_text_box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.constraint.ConstraintLayout>
+</io.branch.search.widget.app.BranchRootLayout>

@@ -1,0 +1,4 @@
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:inset="5dp"
+    android:drawable="@drawable/branch_google_play_store_raw"/>
+<!-- Just a wrapper around branch_google_play_store_raw to add padding -->

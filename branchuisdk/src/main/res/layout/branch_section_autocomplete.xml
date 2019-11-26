@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/branch_section_background"
+    android:elevation="@dimen/branch_section_elevation"
+    android:paddingTop="@dimen/branch_autocomplete_section_padding_vertical"
+    android:paddingBottom="@dimen/branch_autocomplete_section_padding_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:layout_marginBottom="@dimen/branch_autocomplete_spacing"
+        android:paddingLeft="@dimen/branch_autocomplete_section_padding_horizontal"
+        android:paddingRight="@dimen/branch_autocomplete_section_padding_horizontal"
+        android:layoutAnimation="@anim/branch_layout_fall_down" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/engines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/branch_autocomplete_section_padding_horizontal"
+        android:paddingRight="@dimen/branch_autocomplete_section_padding_horizontal"
+        android:layoutAnimation="@anim/branch_layout_fall_down" />
+</LinearLayout>

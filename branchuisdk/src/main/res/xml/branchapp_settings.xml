@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/branchapp_settings_category">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="provider_branch"
+            android:title="@string/branchapp_settings_provider_branch"
+            android:summary="@string/branchapp_settings_provider_branch_summary" />
+        <SwitchPreference
+            android:icon="@null"
+            android:defaultValue="true"
+            android:key="provider_contacts"
+            android:title="@string/branchapp_settings_provider_contacts"
+            android:summary="@string/branchapp_settings_provider_contacts_summary" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="provider_files"
+            android:title="@string/branchapp_settings_provider_files"
+            android:summary="@string/branchapp_settings_provider_files_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/branchapp_settings_other">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="non_installed_apps"
+            android:title="@string/branchapp_settings_non_installed_apps"
+            android:summary="@string/branchapp_settings_non_installed_apps_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

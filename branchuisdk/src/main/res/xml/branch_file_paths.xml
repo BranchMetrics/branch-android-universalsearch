@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <!-- Generic path in Environment.getExternalStorageDirectory() -->
+    <external-path name="files" path="/" />
+
+    <!-- Generic path in Context.getExternalFilesDir(null) -->
+    <external-files-path name="efiles" path="/" />
+
+    <!-- Generic path in Context.getExternalCacheDir() -->
+    <external-cache-path name="ecache" path="/" />
+
+    <!-- Generic path in Context.getExternalMediaDirs() -->
+    <external-media-path name="emedia" path="/" />
+
+    <!--
+        Other options, that we don't use since we don't share anything that is app-private
+        but just files found from MediaStore:
+
+        Files in the Context.getFilesDir() app-private directory:
+        <files-path name="files" path="/" />
+
+        Files in the Context.getCacheDir() app-private directory:
+        <cache-path name="files" path="/" />
+    -->
+</paths>

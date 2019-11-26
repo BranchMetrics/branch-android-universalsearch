@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/branch_shortcut_padding_start"
+    android:paddingEnd="@dimen/branch_shortcut_padding_end"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        style="?attr/branchShortcutIcon"
+        android:id="@+id/shortcut_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/branch_ic_settings_24dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/branch_shortcut_icon_end_margin"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shortcut_img"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="?attr/branchShortcutTitle"
+            android:id="@+id/shortcut_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/branch_shortcut_subtitle_top_margin"
+            tools:text="Bluetooth" />
+
+        <TextView
+            style="?attr/branchShortcutSubtitle"
+            android:id="@+id/shortcut_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shortcut_subtitle"
+            tools:text="Settings" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="?attr/branchInAppFilterContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="@dimen/branch_inapp_filter_item_half_spacing"
+    android:layout_marginRight="@dimen/branch_inapp_filter_item_half_spacing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        style="?attr/branchInAppFilterIcon"
+        android:id="@+id/branch_filter_image"
+        android:layout_marginEnd="@dimen/branch_inapp_filter_icon_end_margin" />
+
+    <TextView
+        style="?attr/branchInAppFilterLabel"
+        android:id="@+id/branch_filter_text"
+        android:gravity="center_vertical|start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

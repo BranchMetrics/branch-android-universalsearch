@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="branch_rounded_rectangle_corner_radius">4dp</dimen>
+    <dimen name="branch_spacing_large">16dp</dimen>
+    <dimen name="branch_spacing_medium">8dp</dimen>
+    <dimen name="branch_spacing_small">4dp</dimen>
+    <dimen name="branch_spacing_extra_small">2dp</dimen>
+    <dimen name="branch_icon">24dp</dimen>
+    <dimen name="branch_scrollbar_width">6dp</dimen>
+
+    <!-- Provider dimensions -->
+    <dimen name="branch_provider_divider_height">16dp</dimen>
+    <dimen name="branch_provider_divider_margin_top">0dp</dimen>
+    <dimen name="branch_provider_divider_margin_bottom">0dp</dimen>
+    <dimen name="branch_provider_divider_margin_horizontal">0dp</dimen>
+    <dimen name="branch_provider_padding_horizontal">0dp</dimen>
+    <dimen name="branch_provider_padding_vertical">0dp</dimen>
+    <dimen name="branch_provider_elevation">0dp</dimen>
+
+    <!-- Section dimensions -->
+    <dimen name="branch_section_divider_height">@dimen/branch_provider_divider_height</dimen>
+    <dimen name="branch_section_divider_margin_top">@dimen/branch_provider_divider_margin_top</dimen>
+    <dimen name="branch_section_divider_margin_bottom">@dimen/branch_provider_divider_margin_bottom</dimen>
+    <dimen name="branch_section_divider_margin_horizontal">@dimen/branch_provider_divider_margin_horizontal</dimen>
+    <dimen name="branch_section_padding_horizontal">10dp</dimen>
+    <dimen name="branch_section_padding_vertical">0dp</dimen>
+    <dimen name="branch_section_elevation">0dp</dimen>
+
+    <!-- Section header dimensions -->
+    <dimen name="branch_section_header_margin_top">0dp</dimen>
+    <dimen name="branch_section_header_margin_bottom">10dp</dimen>
+    <dimen name="branch_section_header_margin_horizontal">0dp</dimen>
+    <dimen name="branch_section_header_toggle_icon">16dp</dimen>
+
+    <!-- "all apps" provider -->
+    <dimen name="branch_allapps_vertical_padding">16dp</dimen>
+
+    <!-- Shortcut provider -->
+    <dimen name="branch_shortcut_icon">46dp</dimen>
+    <dimen name="branch_shortcut_icon_end_margin">@dimen/branch_spacing_medium</dimen>
+    <dimen name="branch_shortcut_vertical_spacing">10dp</dimen>
+    <dimen name="branch_shortcut_subtitle_top_margin">2dp</dimen>
+    <dimen name="branch_shortcut_padding_start">0dp</dimen>
+    <dimen name="branch_shortcut_padding_end">0dp</dimen>
+
+    <!-- Apps providers -->
+    <!-- The spacing between rows, and the min spacing between columns -->
+    <dimen name="branch_apps_spacing">16dp</dimen>
+    <dimen name="branch_apps_label_spacing">6dp</dimen>
+    <dimen name="branch_apps_icon">52dp</dimen>
+    <dimen name="branch_apps_icon_elevation">4dp</dimen>
+    <dimen name="branch_apps_width">64dp</dimen>
+    <dimen name="branch_apps_list_padding_horizontal">0dp</dimen>
+    <dimen name="branch_apps_list_padding_vertical">0dp</dimen>
+
+    <!-- Media provider -->
+    <!-- The spacing between rows, and the min spacing between columns -->
+    <dimen name="branch_media_spacing">16dp</dimen>
+    <dimen name="branch_media_label_spacing">6dp</dimen>
+    <dimen name="branch_media_icon">52dp</dimen>
+    <dimen name="branch_media_icon_elevation">4dp</dimen>
+    <dimen name="branch_media_width">64dp</dimen>
+    <dimen name="branch_media_list_padding_horizontal">0dp</dimen>
+    <dimen name="branch_media_list_padding_vertical">0dp</dimen>
+
+    <!-- Contacts provider -->
+    <dimen name="branch_contact_elevation">2dp</dimen>
+    <dimen name="branch_contact_icon_size">32dp</dimen>
+    <dimen name="branch_contact_icon_elevation">0dp</dimen>
+    <dimen name="branch_contact_letter_size">12dp</dimen>
+    <dimen name="branch_contact_actions_spacing">16dp</dimen>
+    <dimen name="branch_contact_action_padding">6dp</dimen>
+    <dimen name="branch_contact_action_elevation">0dp</dimen>
+    <dimen name="branch_contact_name_margin_start">10dp</dimen>
+    <dimen name="branch_contact_name_margin_end">8dp</dimen>
+    <dimen name="branch_contact_spacing">8dp</dimen>
+    <dimen name="branch_contact_padding_horizontal">8dp</dimen>
+    <dimen name="branch_contact_padding_vertical">8dp</dimen>
+    <dimen name="branch_contact_list_padding_horizontal">0dp</dimen>
+    <dimen name="branch_contact_list_padding_vertical">0dp</dimen>
+
+    <!-- Autocomplete provider -->
+    <dimen name="branch_autocomplete_spacing">8dp</dimen>
+    <dimen name="branch_autocomplete_inner_spacing_start">0dp</dimen>
+    <dimen name="branch_autocomplete_inner_spacing_end">@dimen/branch_autocomplete_inner_spacing_start</dimen>
+    <dimen name="branch_autocomplete_inner_spacing_middle">10dp</dimen>
+    <dimen name="branch_autocomplete_icon">@dimen/branch_icon</dimen>
+    <dimen name="branch_autocomplete_text">14sp</dimen>
+    <dimen name="branch_autocomplete_padding_top">6dp</dimen>
+    <dimen name="branch_autocomplete_padding_bottom">6dp</dimen>
+    <dimen name="branch_autocomplete_padding_horizontal">6dp</dimen>
+    <!-- Since autocomplete is a special provider (the first) we also offer special section padding controls. -->
+    <dimen name="branch_autocomplete_section_padding_horizontal">@dimen/branch_section_padding_horizontal</dimen>
+    <dimen name="branch_autocomplete_section_padding_vertical">@dimen/branch_section_padding_vertical</dimen>
+
+    <!-- Autocomplete Search Engines -->
+    <dimen name="branch_search_engine_inner_spacing_start">@dimen/branch_autocomplete_inner_spacing_start</dimen>
+    <dimen name="branch_search_engine_inner_spacing_end">@dimen/branch_autocomplete_inner_spacing_end</dimen>
+    <dimen name="branch_search_engine_inner_spacing_middle">@dimen/branch_autocomplete_inner_spacing_middle</dimen>
+    <dimen name="branch_search_engine_padding_top">@dimen/branch_autocomplete_padding_top</dimen>
+    <dimen name="branch_search_engine_padding_bottom">@dimen/branch_autocomplete_padding_bottom</dimen>
+    <dimen name="branch_search_engine_padding_horizontal">@dimen/branch_autocomplete_padding_horizontal</dimen>
+    <dimen name="branch_search_engine_icon">@dimen/branch_autocomplete_icon</dimen>
+
+    <!-- In-app Search: ads -->
+    <dimen name="branch_inapp_ad_install_icon_margin_top">@dimen/branch_inapp_app_padding_bottom</dimen>
+    <dimen name="branch_inapp_ad_install_icon_margin_end">@dimen/branch_inapp_link_icon_margin_end</dimen>
+    <dimen name="branch_inapp_ad_install_label_padding">@dimen/branch_inapp_app_label_padding</dimen>
+    <dimen name="branch_inapp_ad_install_content_title_margin_top">@dimen/branch_inapp_link_title_margin_top</dimen>
+    <dimen name="branch_inapp_ad_install_content_description_margin_top">@dimen/branch_inapp_link_description_margin_top</dimen>
+    <dimen name="branch_inapp_ad_install_margin_top">0dp</dimen>
+    <dimen name="branch_inapp_ad_install_margin_bottom">0dp</dimen>
+    <dimen name="branch_inapp_ad_install_margin_horizontal">0dp</dimen>
+    <dimen name="branch_inapp_ad_install_padding_top">@dimen/branch_inapp_app_padding_top</dimen>
+    <dimen name="branch_inapp_ad_install_padding_bottom">@dimen/branch_inapp_link_padding_bottom</dimen>
+    <dimen name="branch_inapp_ad_install_padding_horizontal">@dimen/branch_inapp_app_padding_horizontal</dimen>
+    <dimen name="branch_inapp_ad_install_inner_spacing">@dimen/branch_inapp_app_inner_spacing</dimen>
+    <dimen name="branch_inapp_ad_install_image">@dimen/branch_inapp_link_icon</dimen>
+    <dimen name="branch_inapp_ad_install_image_corner_radius">@dimen/branch_inapp_link_icon_corner_radius</dimen>
+
+    <!-- In-app Search: deep links -->
+    <dimen name="branch_inapp_link_icon">48dp</dimen>
+    <dimen name="branch_inapp_link_icon_corner_radius">10dp</dimen>
+    <dimen name="branch_inapp_link_icon_margin_end">8dp</dimen>
+    <dimen name="branch_inapp_link_padding_top">5dp</dimen>
+    <dimen name="branch_inapp_link_padding_bottom">5dp</dimen>
+    <dimen name="branch_inapp_link_spacing_start">10dp</dimen>
+    <dimen name="branch_inapp_link_spacing_end">0dp</dimen>
+    <dimen name="branch_inapp_link_title_margin_top">4dp</dimen>
+    <dimen name="branch_inapp_link_description_margin_top">4dp</dimen>
+
+    <!-- In-app Search: app headers -->
+    <dimen name="branch_inapp_app_icon">16dp</dimen>
+    <dimen name="branch_inapp_app_padding_top">@dimen/branch_section_header_margin_top</dimen>
+    <dimen name="branch_inapp_app_padding_bottom">@dimen/branch_section_header_margin_bottom</dimen>
+    <dimen name="branch_inapp_app_padding_horizontal">@dimen/branch_section_header_margin_horizontal</dimen>
+    <dimen name="branch_inapp_app_inner_spacing">@dimen/branch_spacing_medium</dimen>
+    <dimen name="branch_inapp_app_label_padding">0dp</dimen>
+    <dimen name="branch_inapp_app_divider_height">1dp</dimen>
+
+    <!-- In-app Search: app filters -->
+    <dimen name="branch_inapp_filter_icon">24dp</dimen>
+    <dimen name="branch_inapp_filter_icon_end_margin">@dimen/branch_spacing_medium</dimen>
+    <dimen name="branch_inapp_filter_item_padding">@dimen/branch_spacing_medium</dimen>
+    <dimen name="branch_inapp_filter_item_half_spacing">@dimen/branch_spacing_small</dimen>
+    <dimen name="branch_inapp_filter_text">12sp</dimen>
+    <dimen name="branch_inapp_filter_elevation_selected">0dp</dimen>
+    <dimen name="branch_inapp_filter_elevation_unselected">0dp</dimen>
+
+    <!-- All Apps provider -->
+    <dimen name="branch_all_apps_vertical_margin">16dp</dimen>
+
+    <!-- Other -->
+    <dimen name="branch_widget_hint_text">16sp</dimen>
+</resources>

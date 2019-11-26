@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.branch.search.widget">
+
+    <application
+        android:theme="@style/BranchApp.AppTheme">
+        <activity android:name=".BaseActivityTest$TestActivity" />
+
+        <!-- The Branch Key for testing. Do not use this key for production applications.
+
+             NOTE: key_live_jjRoklsRR7eGDSf5HoEENfpdCDff6GTq this key doesn't work anymore,
+             using the sample app key instead.
+        -->
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_ekzqC49363HuS7qlHunMQfnnzyj4F1jr" />
+    </application>
+
+ </manifest>

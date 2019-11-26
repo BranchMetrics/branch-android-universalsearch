@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GENERAL -->
+    <!-- Background color for UIs -->
+    <color name="branch_background">#eeeeee</color>
+    <!-- Background color for surfaces on top of branch_background. See below for usages -->
+    <color name="branch_surface_background">#F5F5F5</color>
+    <!-- Highlight color: used for app bar, scrollbar, headers vertical lines -->
+    <color name="branch_highlight">#2D4AB4</color>
+    <!-- Secondary highlight color: used for contact actions, autocomplete search icon, ... -->
+    <color name="branch_highlight_secondary">#ff0099cc</color>
+
+    <!-- Regular text color: used for top level text -->
+    <color name="branch_text_regular">#222222</color>
+    <!-- Secondary text color: used for small text -->
+    <color name="branch_text_secondary">#6B6B6B</color>
+
+    <!-- Spacing color: appears between providers -->
+    <color name="branch_provider_divider">@android:color/transparent</color>
+    <!-- Background color for providers. Might be covered by section one -->
+    <color name="branch_provider_background">@android:color/transparent</color>
+    <!-- Spacing color: appears between providers -->
+    <color name="branch_section_divider">@android:color/transparent</color>
+    <!-- Background color for sections -->
+    <color name="branch_section_background">@android:color/transparent</color>
+    <!-- Color of the scrollbar background -->
+    <color name="branch_scrollbar_track">#CCCCCC</color>
+    <!-- Color of the scrollbar. Defaults to branch_highlight -->
+    <color name="branch_scrollbar_thumb">@color/branch_highlight</color>
+    <!-- Background of adaptive icons that are generated if the app does not provide one -->
+    <color name="branch_adaptive_icon_background">#FFFFFF</color>
+
+    <!-- BRANCH SEARCH -->
+    <!-- Install ad: Sponsored label background -->
+    <color name="branch_inapp_ad_install_label_background">@color/branch_inapp_app_label_background</color>
+    <!-- Install ad: Background for sponsored install ads -->
+    <color name="branch_inapp_ad_install_background">@android:color/transparent</color>
+
+    <!-- App filters: background color (selected item) -->
+    <color name="branch_inapp_filter_background_selected">@color/branch_surface_background</color>
+    <!-- App filters: background color (unselected) -->
+    <color name="branch_inapp_filter_background_unselected">@color/branch_surface_background</color>
+    <!-- App filters: text color (selected item) -->
+    <color name="branch_inapp_filter_text_selected">@color/branch_text_regular</color>
+    <!-- App filters: text color (unselected) -->
+    <color name="branch_inapp_filter_text_unselected">@color/branch_text_secondary</color>
+
+    <!-- App results type background tint (web, installed) -->
+    <color name="branch_inapp_app_label_background">@android:color/transparent</color>
+
+    <!-- CONTACTS -->
+    <!-- Background for actions (call, message). Defaults to branch_highlight_secondary -->
+    <color name="branch_contact_actions_background">@color/branch_highlight_secondary</color>
+    <!-- Background for the contact. Defaults to branch_surface_background -->
+    <color name="branch_contact_background">@color/branch_surface_background</color>
+    <!-- Tint for the contact action icon -->
+    <color name="branch_contact_action_tint">@android:color/white</color>
+
+    <!-- SHORTCUTS -->
+    <!-- Color of the icons. Defaults to branch_highlight_secondary -->
+    <color name="branch_shortcut_icon">@color/branch_highlight_secondary</color>
+
+    <!-- AUTOCOMPLETE -->
+    <!-- Color of the search icon before each autocomplete suggestion. Defaults to branch_highlight_secondary -->
+    <color name="branch_autocomplete_icon">@color/branch_highlight_secondary</color>
+    <!-- Color of the text of each autocomplete suggestion. Defaults to branch_text_regular -->
+    <color name="branch_autocomplete_text">@color/branch_text_secondary</color>
+    <!-- Color of the text of each autocomplete suggestion when highlighted (the part that matches the query) -->
+    <color name="branch_autocomplete_text_highlight">@color/branch_text_regular</color>
+    <!-- Background for the autocomplete item. Defaults to branch_surface_background -->
+    <color name="branch_autocomplete_background">@color/branch_surface_background</color>
+
+    <!-- Background for the search engine item. -->
+    <color name="branch_search_engine_background">@color/branch_autocomplete_background</color>
+
+    <!-- DISCOVERY -->
+    <!-- Color of the horizontal divider for branch discovery app results -->
+    <color name="branch_branchapp_divider">#33222222</color>
+    
+    <!-- MEDIA -->
+    <!-- Tint for icons in previews. -->
+    <color name="branch_media_icon">#FFFFFF</color>
+    <!-- Background color for 'folder' files. -->
+    <color name="branch_media_folder">#8bc34a</color>
+    <!-- Background color for 'other' files. -->
+    <color name="branch_media_other">#009688</color>
+    <!-- Background color for 'audio' files. -->
+    <color name="branch_media_audio">#5677fc</color>
+    <!-- Background color for 'video' files. -->
+    <color name="branch_media_video">#ff9800</color>
+    <!-- Background color for 'picture' files. -->
+    <color name="branch_media_picture">#ff5722</color>
+    <!-- Background color for 'playlist' files. -->
+    <color name="branch_media_playlist">#e91e63</color>
+    <!-- Background color for 'pdf' files. -->
+    <color name="branch_media_pdf">#E42026</color>
+
+    <!-- ALL PROVIDERS -->
+    <color name="branch_provider_header_line">@color/branch_highlight</color>
+    <!-- Toggle icon tint -->
+    <color name="branch_provider_header_toggle_icon">@color/branch_text_secondary</color>
+
+    <!-- Material colors for random picker -->
+    <array name="branch_material_400">
+        <item name="red_400" type="color">#e84e40</item>
+        <item name="pink_400" type="color">#ec407a</item>
+        <item name="purple_400" type="color">#ab47bc</item>
+        <item name="deep_purple_400" type="color">#7e57c2</item>
+        <item name="indigo_400" type="color">#5c6bc0</item>
+        <item name="blue_400" type="color">#738ffe</item>
+        <item name="light_blue_400" type="color">#29b6f6</item>
+        <item name="cyan_400" type="color">#26c6da</item>
+        <item name="teal_400" type="color">#26a69a</item>
+        <item name="green_400" type="color">#2baf2b</item>
+        <item name="light_green_400" type="color">#9ccc65</item>
+        <item name="lime_400" type="color">#d4e157</item>
+        <item name="yellow_400" type="color">#ffee58</item>
+        <item name="orange_400" type="color">#ffa726</item>
+        <item name="deep_orange_400" type="color">#ff7043</item>
+        <item name="brown_400" type="color">#8d6e63</item>
+        <item name="grey_400" type="color">#bdbdbd</item>
+        <item name="blue_grey_400" type="color">#78909c</item>
+    </array>
+
+    <!-- Unused -->
+    <array name="branch_material_500">
+        <item name="red_500" type="color">#e51c23</item>
+        <item name="pink_500" type="color">#e91e63</item>
+        <item name="purple_500" type="color">#9c27b0</item>
+        <item name="deep_purple_500" type="color">#673ab7</item>
+        <item name="indigo_500" type="color">#3f51b5</item>
+        <item name="blue_500" type="color">#5677fc</item>
+        <item name="light_blue_500" type="color">#03a9f4</item>
+        <item name="cyan_500" type="color">#00bcd4</item>
+        <item name="teal_500" type="color">#009688</item>
+        <item name="green_500" type="color">#259b24</item>
+        <item name="light_green_500" type="color">#8bc34a</item>
+        <item name="lime_500" type="color">#cddc39</item>
+        <item name="yellow_500" type="color">#ffeb3b</item>
+        <item name="orange_500" type="color">#ff9800</item>
+        <item name="deep_orange_500" type="color">#ff5722</item>
+        <item name="brown_500" type="color">#795548</item>
+        <item name="grey_500" type="color">#9e9e9e</item>
+        <item name="blue_grey_500" type="color">#607d8b</item>
+    </array>
+
+</resources>

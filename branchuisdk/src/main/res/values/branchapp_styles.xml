@@ -1,0 +1,165 @@
+<resources>
+
+    <style name="BranchApp" parent="Branch"/>
+
+    <style name="BranchApp.AppTheme" parent="Branch.AppTheme">
+        <!-- View styles -->
+        <!-- Do NOT remove white spaces. They help solving merge conflicts. -->
+        <item name="branchAppSearchTabEditBox">@style/BranchApp.View.SearchTabEditBox</item>
+        <item name="branchAppSearchTabSettingsIcon">@style/BranchApp.View.SearchTabSettingsIcon</item>
+        <item name="branchAppSearchTabSearchIcon">@style/BranchApp.View.SearchTabSearchIcon</item>
+        <item name="branchAppSearchTabLoadingIndicator">@style/BranchApp.View.SearchTabLoadingIndicator</item>
+        <item name="branchAppSearchTabEditText">@style/BranchApp.View.SearchTabEditText</item>
+        <item name="branchAppSearchTabCancelIcon">@style/BranchApp.View.SearchTabCancelIcon</item>
+        <item name="branchAppSearchTabMicrophoneIcon">@style/BranchApp.View.SearchTabMicrophoneIcon</item>
+
+        <item name="branchAppSettingsToolbar">@style/BranchApp.View.SettingsToolbar</item>
+
+        <item name="branchAppFragmentTabLayout">@style/BranchApp.View.FragmentTabLayout</item>
+        <item name="branchAppFragmentTabLayoutLabel">@style/BranchApp.View.FragmentTabLayoutLabel</item>
+        <!-- Preferences -->
+        <item name="preferenceTheme">@style/BranchApp.Preferences</item>
+    </style>
+
+    <!-- *********** -->
+    <!-- VIEW STYLES -->
+    <!-- *********** -->
+
+    <style name="BranchApp.View" />
+
+    <!-- R.layout.branchapp_tab_search : the edit text box -->
+    <style name="BranchApp.View.SearchTabEditBox">
+        <item name="android:elevation">@dimen/branchapp_edit_text_box_elevation</item>
+        <item name="android:background">@drawable/branchapp_edit_text_box_background</item>
+        <item name="android:backgroundTint">@color/branchapp_edit_text_box_background</item>
+    </style>
+
+    <!-- R.layout.branchapp_tab_search : the settings icon -->
+    <!-- Need at least the box elevation to appear over the box -->
+    <style name="BranchApp.View.SearchTabSettingsIcon">
+        <item name="android:elevation">@dimen/branchapp_edit_text_box_elevation</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:tint">@color/branchapp_edit_text_icons</item>
+        <item name="android:src">@drawable/branchapp_ic_more_24dp</item>
+    </style>
+
+    <!-- R.layout.branchapp_tab_search : the search icon -->
+    <!-- Need at least the box elevation to appear over the box -->
+    <style name="BranchApp.View.SearchTabSearchIcon">
+        <item name="android:elevation">@dimen/branchapp_edit_text_box_elevation</item>
+        <item name="android:tint">@color/branchapp_edit_text_search_icon</item>
+        <item name="android:src">@drawable/branch_ic_search_24dp</item>
+    </style>
+
+    <!-- R.layout.branchapp_tab_search : the loading indicator -->
+    <!-- Need at least the box elevation to appear over the box -->
+    <style name="BranchApp.View.SearchTabLoadingIndicator" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:elevation">@dimen/branchapp_edit_text_box_elevation</item>
+    </style>
+
+    <!-- R.layout.branchapp_tab_search : the cancel icon -->
+    <!-- Need at least the box elevation to appear over the box -->
+    <style name="BranchApp.View.SearchTabCancelIcon">
+        <item name="android:elevation">@dimen/branchapp_edit_text_box_elevation</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:tint">@color/branchapp_edit_text_icons</item>
+        <item name="android:src">@drawable/branch_ic_close_24dp</item>
+    </style>
+
+    <!-- R.layout.branchapp_tab_search : the microphone icon -->
+    <!-- Need at least the box elevation to appear over the box -->
+    <style name="BranchApp.View.SearchTabMicrophoneIcon">
+        <item name="android:elevation">@dimen/branchapp_edit_text_box_elevation</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:tint">@color/branchapp_edit_text_icons</item>
+        <item name="android:src">@drawable/branchapp_ic_mic_24dp</item>
+    </style>
+
+    <!-- R.layout.branchapp_tab_search : the edit text -->
+    <!-- Need at least the box elevation to appear over the box -->
+    <style name="BranchApp.View.SearchTabEditText">
+        <item name="android:elevation">@dimen/branchapp_edit_text_box_elevation</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/branchapp_edit_text_text</item>
+        <item name="android:textColor">@color/branchapp_edit_text_text</item>
+        <item name="android:textColorHint">@color/branchapp_edit_text_text_unfocused</item>
+        <item name="android:hint">@string/branch_widget_hint_text</item>
+        <item name="android:paddingLeft">@dimen/branchapp_edit_text_padding</item>
+        <item name="android:paddingRight">@dimen/branchapp_edit_text_padding</item>
+        <!-- disables the annoying extract view when rotating to landscape -->
+        <item name="android:imeOptions">actionSearch|flagNoExtractUi</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">textAutoComplete</item>
+    </style>
+
+    <!-- R.layout.branchapp_tab_search : the top toolbar -->
+    <style name="BranchApp.View.SettingsToolbar">
+        <item name="navigationIcon">@drawable/branchapp_ic_back_24dp</item>
+        <item name="titleTextColor">@color/branchapp_tab_text_selected</item>
+        <item name="title">@string/branchapp_settings_title</item>
+    </style>
+
+    <!-- R.layout.branchapp_tabs_fragment : the tab layout -->
+    <style name="BranchApp.View.FragmentTabLayout">
+        <item name="tabMode">fixed</item>
+        <item name="tabBackground">@null</item>
+        <item name="tabInlineLabel">true</item>
+        <item name="tabIndicatorColor">@color/branchapp_tab_indicator</item>
+        <item name="tabTextAppearance">?attr/branchAppFragmentTabLayoutLabel</item>
+        <item name="tabIconTint">@color/branchapp_tab_icon</item>
+        <item name="tabTextColor">@color/branchapp_tab_text</item>
+    </style>
+
+    <!-- R.layout.branchapp_tabs_fragment : the tab layout text appearance -->
+    <style name="BranchApp.View.FragmentTabLayoutLabel" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/branchapp_tab_label_text</item>
+    </style>
+
+    <!-- *********** -->
+    <!-- Settings UI -->
+    <!-- *********** -->
+
+    <style name="BranchApp.Preferences" parent="PreferenceThemeOverlay">
+        <item name="preferenceCategoryStyle">@style/BranchApp.Preference.Category</item>
+        <item name="switchPreferenceStyle">@style/BranchApp.Preference.Switch</item>
+        <item name="preferenceFragmentCompatStyle">@style/BranchApp.Preference.Fragment</item>
+        <item name="preferenceFragmentStyle">@style/BranchApp.Preference.Fragment</item>
+        <item name="android:listPreferredItemPaddingStart">@dimen/branchapp_settings_padding_start</item>
+        <item name="android:listPreferredItemPaddingEnd">@dimen/branchapp_settings_padding_end</item>
+        <item name="android:textAppearanceListItem">@style/BranchApp.Preference.TextAppearance.Title</item>
+        <item name="android:textAppearanceListItemSecondary">@style/BranchApp.Preference.TextAppearance.Description</item>
+        <item name="android:textColorSecondary">@color/branchapp_settings_description_text</item> <!-- needed -->
+    </style>
+
+    <style name="BranchApp.Preference"/>
+    <style name="BranchApp.Preference.Fragment" parent="PreferenceFragment.Material">
+        <item name="android:divider">@drawable/branchapp_settings_divider</item>
+    </style>
+    <style name="BranchApp.Preference.Category" parent="Preference.Category.Material">
+        <!-- Category layout currently has a bug which does not respect the iconSpaceReserved attr,
+             plus it also does not have easy way to style text style. So we use a custom layout,
+             but we should remove this once Preference bugs are fixed. -->
+        <item name="android:layout">@layout/branchapp_settings_category</item>
+        <item name="iconSpaceReserved">@bool/branchapp_settings_icon_space_reserved</item>
+    </style>
+    <style name="BranchApp.Preference.Switch" parent="Preference.SwitchPreference.Material">
+        <item name="iconSpaceReserved">@bool/branchapp_settings_icon_space_reserved</item>
+    </style>
+
+    <style name="BranchApp.Preference.TextAppearance"/>
+    <style name="BranchApp.Preference.TextAppearance.Title" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/branchapp_settings_title_text</item>
+        <item name="android:textSize">@dimen/branchapp_settings_title_text</item>
+    </style>
+    <style name="BranchApp.Preference.TextAppearance.Description" parent="TextAppearance.AppCompat.Small">
+        <!-- textColor is from android:textColorSecondary, see Branch.Preferences -->
+        <item name="android:textSize">@dimen/branchapp_settings_description_text</item>
+    </style>
+    <style name="BranchApp.Preference.TextAppearance.Category" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/branchapp_settings_category_text</item>
+        <item name="android:textSize">@dimen/branchapp_settings_category_text</item>
+    </style>
+
+</resources>

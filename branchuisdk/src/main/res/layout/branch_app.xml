@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <io.branch.search.widget.ui.widget.AppIconView
+        style="?attr/branchAppIcon"
+        android:id="@+id/branch_app_icon" />
+
+    <TextView
+        style="?attr/branchAppLabel"
+        android:layout_marginTop="@dimen/branch_apps_label_spacing"
+        android:layout_width="@dimen/branch_apps_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/branch_app_label"
+        android:gravity="center_horizontal"
+        tools:text="Gmail"/>
+
+</LinearLayout>
